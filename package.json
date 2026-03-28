@@ -15,6 +15,11 @@
     "name": "pengjianzhong",
     "email": "pengjianzhong@users.noreply.github.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lin-han-li/YOURSHIGUAN_Register.git"
+  },
+  "homepage": "https://github.com/lin-han-li/YOURSHIGUAN_Register",
   "license": "UNLICENSED",
   "engines": {
     "node": ">=20"
@@ -40,6 +45,8 @@
     "appSlug": "yourshiguan-register",
     "publisher": "pengjianzhong",
     "publisherEmail": "pengjianzhong@users.noreply.github.com",
+    "publisherUrl": "https://github.com/lin-han-li/YOURSHIGUAN_Register",
+    "supportUrl": "https://github.com/lin-han-li/YOURSHIGUAN_Register/issues",
     "bundleIdentifier": "com.pengjianzhong.yourshiguan-register",
     "entry": "yourshiguan_register.py",
     "spec": "yourshiguan_register.spec",

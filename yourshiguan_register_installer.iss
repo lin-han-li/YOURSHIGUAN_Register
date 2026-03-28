@@ -8,10 +8,10 @@
   #define MyAppPublisher "pengjianzhong"
 #endif
 #ifndef MyAppPublisherURL
-  #define MyAppPublisherURL "https://example.invalid/yourshiguan-register"
+  #define MyAppPublisherURL "https://github.com/lin-han-li/YOURSHIGUAN_Register"
 #endif
 #ifndef MyAppSupportURL
-  #define MyAppSupportURL "mailto:pengjianzhong@users.noreply.github.com"
+  #define MyAppSupportURL "https://github.com/lin-han-li/YOURSHIGUAN_Register/issues"
 #endif
 #ifndef MyAppExeName
   #define MyAppExeName "YOURSHIGUAN_Register.exe"

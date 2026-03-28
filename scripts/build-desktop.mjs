@@ -73,8 +73,8 @@ function buildWindowsPackage() {
   run(isccPath, [
     `/DMyAppVersion=${pkg.version}`,
     `/DMyAppPublisher=${release.publisher}`,
-    `/DMyAppPublisherURL=https://example.invalid/${release.appSlug}`,
-    `/DMyAppSupportURL=mailto:${release.publisherEmail}`,
+    `/DMyAppPublisherURL=${release.publisherUrl}`,
+    `/DMyAppSupportURL=${release.supportUrl}`,
     `/DMyAppExeName=${normalizeWindowsExeName(release.windowsExecutableName)}`,
     `/DMySourceExePath=${manifest.binaryPath}`,
     `/DMyOutputDir=${artifactRoot}`,
