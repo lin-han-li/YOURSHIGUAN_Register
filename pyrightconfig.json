@@ -1,0 +1,29 @@
+{
+  "include": [
+    "yourshiguan_register.py",
+    "scripts/smoke-test.py"
+  ],
+  "exclude": [
+    "build",
+    "dist",
+    "artifacts",
+    "accounts",
+    "codex_tokens",
+    "__pycache__"
+  ],
+  "pythonVersion": "3.11",
+  "typeCheckingMode": "basic",
+  "reportMissingImports": "none",
+  "reportMissingTypeStubs": "none",
+  "reportAttributeAccessIssue": "none",
+  "reportArgumentType": "none",
+  "reportGeneralTypeIssues": "none",
+  "reportOptionalMemberAccess": "none",
+  "reportOptionalSubscript": "none",
+  "reportUnknownArgumentType": "none",
+  "reportUnknownMemberType": "none",
+  "reportUnknownVariableType": "none",
+  "reportUnknownParameterType": "none",
+  "reportUnknownLambdaType": "none",
+  "reportUnnecessaryTypeIgnoreComment": "warning"
+}

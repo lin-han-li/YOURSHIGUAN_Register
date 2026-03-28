@@ -1,0 +1,62 @@
+{
+  "name": "yourshiguan-register-release",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Stable cross-platform desktop release orchestration for YOURSHIGUAN Register.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lin-han-li/YOURSHIGUAN_Register.git"
+  },
+  "homepage": "https://github.com/lin-han-li/YOURSHIGUAN_Register",
+  "bugs": {
+    "url": "https://github.com/lin-han-li/YOURSHIGUAN_Register/issues"
+  },
+  "author": {
+    "name": "pengjianzhong",
+    "email": "pengjianzhong@users.noreply.github.com"
+  },
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "typecheck": "pyright --project pyrightconfig.json",
+    "check:web-syntax": "node scripts/check-web-syntax.mjs",
+    "check:workflow": "node scripts/check-workflow.mjs",
+    "smoke:test": "python scripts/smoke-test.py",
+    "verify:desktop": "node scripts/verify-desktop.mjs",
+    "build:server": "node scripts/build-server-binary.mjs",
+    "dist:win": "node scripts/build-desktop.mjs --target win",
+    "dist:linux": "node scripts/build-desktop.mjs --target linux",
+    "dist:mac": "node scripts/build-desktop.mjs --target mac",
+    "release:cross-platform": "powershell -ExecutionPolicy Bypass -File scripts/release-cross-platform.ps1"
+  },
+  "devDependencies": {
+    "pyright": "^1.1.395",
+    "yaml": "^2.6.1"
+  },
+  "desktopRelease": {
+    "appName": "YOURSHIGUAN Register",
+    "appSlug": "yourshiguan-register",
+    "publisher": "pengjianzhong",
+    "publisherEmail": "pengjianzhong@users.noreply.github.com",
+    "bundleIdentifier": "com.pengjianzhong.yourshiguan-register",
+    "entry": "yourshiguan_register.py",
+    "spec": "yourshiguan_register.spec",
+    "windowsInstallerScript": "yourshiguan_register_installer.iss",
+    "windowsExecutableName": "YOURSHIGUAN_Register.exe",
+    "binaryName": "YOURSHIGUAN_Register",
+    "iconWindows": "assets/register_full_icon.ico",
+    "linuxMaintainer": "pengjianzhong <pengjianzhong@users.noreply.github.com>",
+    "runtimeDataDirs": [
+      "accounts",
+      "codex_tokens"
+    ],
+    "runtimeFiles": [
+      "ak.txt",
+      "rk.txt",
+      "config.json"
+    ],
+    "macUnsigned": true
+  }
+}

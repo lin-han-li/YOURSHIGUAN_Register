@@ -1,0 +1,15 @@
+/artifacts/
+/build/
+/dist/
+/node_modules/
+/accounts/
+/codex_tokens/
+/__pycache__/
+/config.json
+/ak.txt
+/rk.txt
+/*.exe
+/*_Setup.exe
+*.pyc
+*.pyo
+*.pyd
